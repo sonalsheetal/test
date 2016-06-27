@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="RaiseFaultJson">
+    <DisplayName>RaiseFaultJson</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Payload variableSuffix="#" variablePrefix="$" contentType="application/json">{
+"errorMessage" : "$errorMessage#" ,
+"description" : "$errorDetail#"
+}</Payload>
+            <StatusCode>{errorCode}</StatusCode>
+            <ReasonPhrase>{errorMessage}</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+</RaiseFault>

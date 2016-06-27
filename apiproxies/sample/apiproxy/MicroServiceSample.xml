@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="24" name="MicroServiceSample">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1467008211122</CreatedAt>
+    <CreatedBy>ashutosh.x.ku@accenture.com</CreatedBy>
+    <Description>P2BLAP-5020HPW$ git: fa917ff4 P2BLAP-5020HPW</Description>
+    <DisplayName>MicroServiceSample</DisplayName>
+    <LastModifiedAt>1467008211122</LastModifiedAt>
+    <LastModifiedBy>ashutosh.x.ku@accenture.com</LastModifiedBy>
+    <Policies>
+        <Policy>AssignMessageRemoveproxypathsuffix</Policy>
+        <Policy>AssignMessageapiKeyError</Policy>
+        <Policy>JscvalidateapiKey</Policy>
+        <Policy>RaiseFaultJson</Policy>
+        <Policy>VerifyAPIKey</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://validateapiKey.js</Resource>
+    </Resources>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AssignMessageapiKeyError">
+    <DisplayName>AssignMessage.apiKeyError</DisplayName>
+    <Properties/>
+    <Set>
+        <Payload variableSuffix="#" variablePrefix="%" contentType="application/json">{
+   "errorMessage":#errorMessage%,
+   "":
+"message":"Inva"
+}</Payload>
+        <StatusCode>400</StatusCode>
+        <ReasonPhrase>Bad Request</ReasonPhrase>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>
